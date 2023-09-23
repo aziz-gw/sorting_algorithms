@@ -81,4 +81,6 @@ void sort_deck(deck_node_t **deck);
 /* Utility functions */
 void swap_ints(int *a, int *b);
 void swap_nodes(listint_t **head, listint_t **node1, listint_t *node2);
+int lomuto_partition(int *array, size_t size, int low, int high);
+void quicksort_recursive(int *array, size_t size, int low, int high);
 #endif
