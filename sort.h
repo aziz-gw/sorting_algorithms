@@ -3,6 +3,7 @@
 
 #include <stddef.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * struct listint_s - Doubly linked list node
@@ -84,4 +85,7 @@ void swap_nodes(listint_t **head, listint_t **node1, listint_t *node2);
 int lomuto_partition(int *array, size_t size, int low, int high);
 void quicksort_recursive(int *array, size_t size, int low, int high);
 int get_max(int *array, int size);
+void merge_subarray(int *subarray, int *buff, size_t front, size_t mid,
+		size_t back);
+void mergesort_recursive(int *subarray, int *buff, size_t front, size_t back);
 #endif

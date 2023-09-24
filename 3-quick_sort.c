@@ -53,7 +53,7 @@ int lomuto_partition(int *array, size_t size, int low, int high)
 }
 
 /**
- * quicksort_recursive - Implements the quicksort algorithm using
+ * quicksort_recursive - implements the quicksort algorithm using
  * recursion
  * @array: the array be sorted
  * @size: the size of the array
