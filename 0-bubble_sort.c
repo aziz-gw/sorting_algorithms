@@ -26,7 +26,7 @@ void swap_ints(int *a, int *b)
 
 void bubble_sort(int *array, size_t size)
 {
-	size_t i, len;
+	size_t i, len = size;
 
 	bool track_swap = false;
 
@@ -36,14 +36,13 @@ void bubble_sort(int *array, size_t size)
 	while (track_swap == false)
 	{
 		track_swap = true;
-		len = size;
 		/* Iterate through the array from the first, second ... to */
 		 /* the last element */
 		for (i = 0; i < (len - 1); i++)
 		{
 			if (array[i] > array[i + 1])
 			{
-				swap_ints(array + i, ((array + i) + 1));
+				swap_ints(array + i, (array + i + 1));
 				/* Prints the array after each swap */
 				print_array(array, size);
 				track_swap = false;
