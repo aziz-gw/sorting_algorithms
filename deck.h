@@ -6,7 +6,11 @@
 #include <string.h>
 
 /**
- * Enum representing the kind of cards.
+ * enum kind_e - representing the kind of cards.
+ * @SPADE:   Spades
+ * @HEART:   Hearts
+ * @CLUB:    Clubs
+ * @DIAMOND: Diamonds
  */
 typedef enum kind_e
 {
@@ -17,7 +21,9 @@ typedef enum kind_e
 } kind_t;
 
 /**
- * Struct representing a playing card.
+ * struct card_s - representing a playing card.
+ * @value: Value of the card (e.g., "Ace", "King")
+ * @kind:  Kind of the card (e.g., SPADE, HEART)
  */
 typedef struct card_s
 {
@@ -26,7 +32,10 @@ typedef struct card_s
 } card_t;
 
 /**
- * Struct representing a node in a deck of cards.
+ * struct deck_node_s - representing a node in a deck of cards.
+ * @card: Pointer to the card of the node
+ * @prev: Pointer to the previous node of the list
+ * @next: Pointer to the next node of the list
  */
 typedef struct deck_node_s
 {
@@ -36,5 +45,6 @@ typedef struct deck_node_s
 } deck_node_t;
 
 void sort_deck(deck_node_t **deck);
+int compare_cards(const void *a, const void *b);
 
 #endif
