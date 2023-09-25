@@ -6,7 +6,7 @@
  * @a: a pointer
  * @b: a pointer
  */
-void swap(int *a,int *b)
+void swap(int *a, int *b)
 {
 	int temp = *a;
 
