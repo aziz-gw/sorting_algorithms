@@ -34,7 +34,6 @@ void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
-void sort_deck(deck_node_t **deck);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 
@@ -51,5 +50,4 @@ void swap(int *a, int *b);
 void heapify(int arr[], size_t size, size_t t_be, size_t root);
 int get_maxi(int *array, size_t size);
 void countingSort(int *array, size_t size, int exp);
-
 #endif
