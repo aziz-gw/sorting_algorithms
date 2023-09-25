@@ -28,7 +28,7 @@ void radix_sort(int *array, size_t size)
 {
 	int exp, max = get_maxi(array, size);
 
-	if (size < 2)
+	if (array == NULL || size < 2)
 		return;
 
 	for (exp = 1; max / exp > 0; exp *= 10)
