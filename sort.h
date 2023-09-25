@@ -78,6 +78,7 @@ void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 void sort_deck(deck_node_t **deck);
+void heap_sort(int *array, size_t size);
 
 /* Utility functions */
 void swap_ints(int *a, int *b);
@@ -88,4 +89,6 @@ int get_max(int *array, int size);
 void merge_subarray(int *subarray, int *buff, size_t front, size_t mid,
 		size_t back);
 void mergesort_recursive(int *subarray, int *buff, size_t front, size_t back);
+void heapify(int arr[], size_t size, size_t root);
+
 #endif
