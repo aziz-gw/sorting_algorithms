@@ -89,6 +89,7 @@ int get_max(int *array, int size);
 void merge_subarray(int *subarray, int *buff, size_t front, size_t mid,
 		size_t back);
 void mergesort_recursive(int *subarray, int *buff, size_t front, size_t back);
-void heapify(int arr[], size_t size, size_t root);
+void swap(int *a,int *b);
+void heapify(int arr[], size_t size, size_t t_be, size_t root);
 
 #endif
