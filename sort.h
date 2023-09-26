@@ -51,5 +51,6 @@ void heapify(int arr[], size_t size, size_t t_be, size_t root);
 int get_maxi(int *array, size_t size);
 void countingSort(int *array, size_t size, int exp);
 void bitonic_merge(int *array, size_t size, size_t beg, size_t seq, int dir);
-void bitonic_sort_recursive(int *array, size_t size, size_t beg, size_t seq, int dir);
+void bitonic_sort_recursive(int *array, size_t size,
+		size_t beg, size_t seq, int dir);
 #endif
