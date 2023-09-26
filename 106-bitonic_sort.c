@@ -37,7 +37,8 @@ void bitonic_merge(int *array, size_t size, size_t beg, size_t seq, int dir)
  * @beg: the start
  * @seq: sequence
  */
-void bitonic_sort_recursive(int *array, size_t size, size_t beg, size_t seq, int dir)
+void bitonic_sort_recursive(int *array, size_t size,
+		size_t beg, size_t seq, int dir)
 {
 	size_t half;
 	char *direction;
