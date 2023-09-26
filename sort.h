@@ -39,7 +39,6 @@ void radix_sort(int *array, size_t size);
 
 /* Utility functions */
 void swap_ints(int *a, int *b);
-void swap_nodes(listint_t **head, listint_t **node1, listint_t *node2);
 int lomuto_partition(int *array, size_t size, int low, int high);
 void quicksort_recursive(int *array, size_t size, int low, int high);
 int get_max(int *array, int size);
@@ -53,4 +52,10 @@ void countingSort(int *array, size_t size, int exp);
 void bitonic_merge(int *array, size_t size, size_t beg, size_t seq, int dir);
 void bitonic_sort_recursive(int *array, size_t size,
 		size_t beg, size_t seq, int dir);
+void swap_nodes(listint_t **list, listint_t *a, listint_t *b);
+
+void hoare_quick_sort(int *array, size_t size, int low, int high);
+void quick_sort_hoare(int *array, size_t size);
+int hoare_partition(int *array, size_t size, int low, int high);
+void swap_integers(int *a, int *b);
 #endif
